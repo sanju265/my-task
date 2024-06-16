@@ -1,0 +1,79 @@
+body {
+    font-size: 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.outer-box {
+    background-color: rgba(145, 5, 49, 0.863);
+    padding: 80px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 700px;
+}
+
+form {
+    background-color: rgb(130, 26, 98);
+    padding: 20px;
+    
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+form label {
+    width: 150px;
+    margin-right: 10px;
+}
+
+form input,
+form select,
+form textarea {
+    width: calc(100% - 160px);
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    color: black;
+}
+
+textarea {
+    height: 60px;
+}
+
+.gender-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.gender-section label {
+    margin-right: 5px;
+}
+
+.gender-section input[type="radio"] {
+    margin-right: 5px;
+}
+
+button.register-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    display: block;
+}
+
+button.register-btn:hover {
+    background-color: #45a049;
+}

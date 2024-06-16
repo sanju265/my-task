@@ -1,0 +1,38 @@
+
+div{
+    border: 1px solid black;
+}
+
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: lightgray;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+    border-right: 1px solid blue;
+}
+
+li a{
+    display: block;
+    color: Blue;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+li a.active {
+    background-color: rgb(148, 147, 147);
+    color: white; 
+}
+
+li a:hover:not(.active) {
+    background-color: grey;
+}
+

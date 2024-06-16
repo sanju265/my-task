@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <style>
+        body {
+            background-color: #fff;
+            font-family: Arial, sans-serif;
+            color: purple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgb(225, 225, 20);
+            padding: 20px;
+            border: 2px dotted purple;
+            width: 600px;
+            display: flex;
+            flex-direction: row;
+            height: 80vh;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+        }
+
+        .nav-item {
+            background-color: #fff;
+            border: 2px solid black;
+            padding: 8px 16px;
+            position: relative;
+            margin-bottom: 10px;
+            text-align: center;
+            width: 100px;
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+
+        .nav-item a.active {
+            color: purple;
+        }
+
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            right: -10px;
+            top: -2px;
+            bottom: -2px;
+            width: 15px;
+            background-color: black;
+        }
+
+        .content {
+            flex-grow: 1;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .content p {
+            margin-top: 0;
+        }
+
+        .footer {
+            border-top: 1px dotted purple;
+            margin-top: 20px;
+            padding-top: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="nav-item"><a href="#" class="active">Home</a></div>
+            <div class="nav-item"><a href="#">Musings</a></div>
+            <div class="nav-item"><a href="#">My Town</a></div>
+            <div class="nav-item"><a href="#">Links</a></div>
+        </div>
+        <div class="content">
+            <h1>My First Styled Page</h1>
+            <p>Welcome to my styled page!</p>
+            <p>It lacks images, but at least it has style. And it has links, even if they don't go anywhere...</p>
+            <p>There should be more here, but I don't know what yet.</p>
+            <div class="footer">
+                <p>Made 5 April 2004</p>
+                <p>by myself</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
